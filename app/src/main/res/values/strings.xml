@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Shuttl</string>
+    <string name="shuttl">Shuttl</string>
+    <string name="like">LIKE</string>
+    <string name="UNLIKE">UNLIKE</string>
+    <string name="from">From</string>
+</resources>

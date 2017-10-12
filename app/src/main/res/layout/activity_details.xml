@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        android:theme="@style/ToolBarStyle"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+    </android.support.v7.widget.Toolbar>
+    <include
+        android:id="@+id/llDetailsDate"
+        layout="@layout/row_date" />
+
+    <include
+        android:id="@+id/llImageOnly"
+        layout="@layout/row_image_only"
+        android:visibility="gone" />
+
+    <include
+        android:id="@+id/llImageText"
+        layout="@layout/row_image_text"
+        android:visibility="gone" />
+
+    <include
+        android:id="@+id/llTextOnly"
+        layout="@layout/row_text_only"
+        android:visibility="gone" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/d12"
+        android:layout_marginTop="@dimen/d8"
+        android:padding="@dimen/d5"
+        android:text="Description"
+        android:textColor="#898989"
+        android:textSize="@dimen/d15"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/d12"
+        android:padding="@dimen/d5"
+        android:text="Not Available"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/d12" />
+</LinearLayout>

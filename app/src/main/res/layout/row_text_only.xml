@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/d6"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    android:id="@+id/llTextRow">
+
+    <include
+        android:id="@+id/llDate"
+        layout="@layout/row_date"
+        android:visibility="gone" />
+
+    <include layout="@layout/row_title" />
+
+    <TextView
+        android:id="@+id/tvQuote"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/d5"
+        android:layout_marginLeft="@dimen/d20"
+        android:layout_marginRight="@dimen/d20"
+        android:layout_marginTop="@dimen/d5"
+        android:text="Make It Happen"
+        android:textColor="#dedddd"
+        android:textSize="@dimen/d35">
+
+    </TextView>
+
+    <include layout="@layout/row_like_from"
+        android:id="@+id/llLikeTextRow"/>
+    <include layout="@layout/row_like_from_text"
+        android:visibility="gone"
+        android:id="@+id/llLikeTextDetails"/>
+</LinearLayout>

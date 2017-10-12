@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/d6"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    android:id="@+id/llImageRow">
+
+    <include
+        android:id="@+id/llDate"
+        layout="@layout/row_date"
+        android:visibility="gone" />
+
+    <include
+        android:id="@+id/llTitleRow" layout="@layout/row_title" />
+    <include layout="@layout/row_title"
+        android:id="@+id/llTitleImage"
+        android:visibility="gone"/>
+
+    <ImageView
+        android:id="@+id/ivImageOnly"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d60"
+        android:layout_marginLeft="@dimen/d20"
+        android:layout_marginRight="@dimen/d20"
+        android:layout_marginTop="@dimen/d10"
+        android:scaleType="centerCrop"
+        android:adjustViewBounds="true"
+        android:orientation="horizontal"
+        android:src="@drawable/placeholder">
+
+    </ImageView>
+
+    <include
+        android:id="@+id/llRowLikeListImage"
+        layout="@layout/row_like_from" />
+    <include
+        android:id="@+id/llRowLikeDetailsImage"
+        layout="@layout/row_like_from_details"
+        android:visibility="gone"/>
+</LinearLayout>
